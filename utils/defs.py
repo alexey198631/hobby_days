@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from dateutil.parser import parse
 from datetime import datetime
 
-from masks import *
+from .masks import *
 
 
 def year(x): #def for taking YEAR from date (when I created this version, I didn't know that it was possible to parse dates

@@ -1,4 +1,5 @@
 from utils.defs import *
+from utils.masks import *
 
 
 USER_CHOICE = '''Assessment system:
@@ -33,7 +34,7 @@ user_choices = {
 
 def menu():
 
-    file_name = 'Days.xlsx'
+    file_name = 'data_files/Days.xlsx'
     days, full, days_competition = prep_one(file_name)
 
     lefts = days_left(days_competition)
