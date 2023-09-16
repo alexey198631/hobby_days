@@ -1,5 +1,4 @@
 from utils.defs import *
-from utils.masks import *
 
 
 USER_CHOICE = '''Assessment system:
