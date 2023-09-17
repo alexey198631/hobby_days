@@ -408,8 +408,6 @@ def prep_two(d_c,left_month,left_year):
 
         My choice : '''
 
-
-
     my_period_s = input(MY_PERIOD)
     my_choice_s = input(MY_CHOICE)
 
@@ -424,8 +422,6 @@ def prep_two(d_c,left_month,left_year):
             writer = pd.ExcelWriter(f'my_goals_avg_per_day_{my_period_s}_{my_choice_s}.xlsx', engine='xlsxwriter')
             achievemnts.to_excel(writer, sheet_name='Achieve_this!')
             writer.close()
-
-
 
             return target_frame, last,my_choice_s,my_period_s
 
