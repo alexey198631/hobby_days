@@ -220,6 +220,7 @@ def prep_one(file_name):
     my_weeks = my_weeks.loc[my_weeks['DATE'] != 'del']
     my_weeks = my_weeks.rename(columns={'DATE':'WEEK#','EVENT':'WEEK_EVENT'})
     my_weeks = my_weeks.set_index('WEEK#')
+
     name_monthes = days.loc[:, ['Type', 'DATE', 'EVENT']]
     my_monthes = name_monthes.loc[name_monthes['Type'] == 'M']
     my_monthes = my_monthes.apply(month_name, axis='columns')
@@ -286,7 +287,7 @@ def prep_one(file_name):
 def target_achievements(df, left_month, left_year, period, choice):
     overal = df.copy()
     try:
-        this_year = overal[overal['YEAR'] == '2023']
+        this_year = overal[overal['YEAR'] == '2024']
     except:
         this_year = overal.copy()
 
